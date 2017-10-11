@@ -1,5 +1,5 @@
 {
-  "name": "bscript",
+  "name": "add-reason-to-cra",
   "version": "0.1.0",
   "bsc-flags": ["-bs-super-errors"],
   "reason" : {"react-jsx" : 2},  

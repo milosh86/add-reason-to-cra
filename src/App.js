@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {format2} from './main.js';
+import { format2 } from './main.js';
+import { jsComponent } from './Article/Article.js';
+// let Article = require('./Article/Article.js').jsComponent;
 
 class App extends Component {
-  
+
   render() {
-  var d = new Date();
-  var numberOfDaysToAdd = 0;
-  d.setDate(d.getDate() + numberOfDaysToAdd);
-  console.log(d.toString(), d.getDay(), d.getMonth(), 'dadad')
-  
+    var d = new Date();
+    var numberOfDaysToAdd = 0;
+    d.setDate(d.getDate() + numberOfDaysToAdd);
+
     return (
       <div className="App">
         <header className="App-header">
@@ -21,6 +22,11 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <strong>{format2(d, 'm/d/y')}</strong>
+        <h1>******************************</h1>
+        <jsComponent 
+          title="ReasonML is cool" 
+          body="I am trying to setup Reason and ReasonReact with existing Create React App project"
+        />
       </div>
     );
   }
